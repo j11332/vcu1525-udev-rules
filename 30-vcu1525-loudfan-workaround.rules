@@ -1,0 +1,5 @@
+ACTION=="bind", KERNEL=="ttyUSB[0-9]*", ATTRS{interface}=="Xilinx VCU1525 Dev Kit",\
+   ATTRS{bInterfaceNumber}=="01",\
+   RUN+="/bin/stty -F /dev/%k 115200",\
+   RUN+="/bin/sh -c '/bin/echo a >> /dev/%k'"
+
