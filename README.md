@@ -2,5 +2,6 @@
 Workaround for vcu1525's extremely loud fan.
 
 # How to install
-``` $ sudo make install
-
+```
+$ sudo make install
+```
